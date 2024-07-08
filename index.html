@@ -22,10 +22,24 @@
             margin: 10px;
             background-color: #fff;
         }
-        .container {
+
+	.container {
+            display: flex;
+            align-items: center; /* Center-align items vertically */
+        }
+        .container img {
+            max-width: 100%; /* Ensure the image scales well */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 20px; /* Space between image and text */
+        }
+        .container .text {
+            max-width: 600px; /* Limit the width of the text for better readability */
+        }
+	    
+	/*.container {
             max-width: 1000px;
             margin: 0 auto;
-        }
+        }*/
         h1, h2 {
             color: #333;
         }
