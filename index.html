@@ -32,6 +32,10 @@
             flex-direction: column; /* Arrange photos in a column */
             margin-right: 30px; /* Space between photos and text */
         }
+	.photos figure {
+            margin: 0;
+            margin-bottom: 10px;
+        }
         .photos img {
             max-width: 100%; /* Ensure the images scale well */
             height: auto; /* Maintain aspect ratio */
@@ -40,11 +44,13 @@
         .text {
             max-width: 1000px; /* Limit the width of the text for better readability */
         }
+	figcaption {
+            text-align: center;
+            font-style: italic;
+            margin-top: 5px;
+        }    
+
 	    
-	/*.container {
-            max-width: 1000px;
-            margin: 0 auto;
-        }*/
         h1, h2 {
             color: #333;
         }
@@ -67,7 +73,7 @@
         <div class="container">
             
 		<div class="photos">
-			<img src="ReducedSizeforWeb/Picture1.png" alt="" width="180" height="">
+			<img src="ReducedSizeforWeb/Picture1.png" alt="" width="200" height="">
 			
 		</div>
 		
@@ -100,10 +106,11 @@
         <div class="container">
 
 		<div class="photos">
-			<img src="ReducedSizeforWeb/MagnetAward.JPG" alt="" width="400" height="">
-			<img src="ReducedSizeforWeb/MagnetAward2.JPG" alt="" width="400" height="">
-			<figcaption>Prof. Kolar is handing over the award to our team, in APEC, Longbeach. We get the the Excellent Innovation Award, 2nd Place, in the IEEE International Challenge in Design Methods for Power Electronics</figcaption>
-			
+			<figure>
+				<img src="ReducedSizeforWeb/MagnetAward.JPG" alt="" width="400" height="">
+				<img src="ReducedSizeforWeb/MagnetAward2.JPG" alt="" width="400" height="">
+				<figcaption>Prof. Kolar is handing over the award to our team, in APEC, Longbeach. We get the the Excellent Innovation Award, 2nd Place, in the IEEE International Challenge in Design Methods for Power Electronics</figcaption>
+			</figure>
 			<img src="ReducedSizeforWeb/ProgressusFinalReview.png" alt="The Dutch delegation in the final review of Progressus in Bari, Italy" width="400" height="">
 			<img src="ReducedSizeforWeb/ecceAsia2023.png" alt="Tutoiral in ECCE Asia 2023, Jeju, Korea" width="400" height="">
 			<img src="ReducedSizeforWeb/FlexH2_2ndWorkshop.jpg" alt="FlexH2 consoritum in ESP" width="400" height="">
