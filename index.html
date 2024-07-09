@@ -52,8 +52,19 @@
             font-style: italic;
             margin-top: 5px;
         }   
-        .text {
-            max-width: 1000px; /* Limit the width of the text for better readability */
+	.scrollable-text {
+            width: 1000px; /* Set the desired width */
+            height: 1000px; /* Set the desired height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            padding: 10px; /* Optional: Add some padding for better readability */
+            border: 1px solid #ccc; /* Optional: Add a border */
+            background-color: #f9f9f9; /* Optional: Set a background color */
+        }
+        .non-scrollable-text {
+            width: 1000px; /* Set the same width for consistency */
+            padding: 10px; /* Optional: Add some padding for better readability */
+            border: 1px solid #ccc; /* Optional: Add a border */
+            background-color: #f9f9f9; /* Optional: Set a background color */
         }
 	 
 
@@ -84,7 +95,7 @@
 			
 		</div>
 		
-		<div class="text">
+		<div class="non-scrollable-text">
 		<h2>About Me</h2>
 		<p>&bull; Associate Professor at Delft University of Technology</p>
 		<p>&bull; IEEE Senior Member</p>
@@ -101,7 +112,7 @@
 	
     <section id="contact">
         <div class="container">
-		<div class="text">
+		<div class="non-scrollable-text">
 			<h2>Contact</h2>
             		<p>Email:z.qin-2@tudelft.nl, zqi@ieee.org</p>
 			<p><a href="https://www.linkedin.com/in/zian-qin-%EF%BC%88%E7%A7%A6%E5%AD%90%E5%AE%89%EF%BC%89-6b85b25a/?originalSubdomain=nl">LinkedIn profile</a>, <a href="https://www.researchgate.net/profile/Zian-Qin">researchgate</a>, <a href="https://scholar.google.com/citations?user=ThdaIp8AAAAJ&hl=en">GoogleScholar</a></p>
@@ -164,7 +175,7 @@
 			
 		</div>
 		
-            	<div class="text">
+            	<div class="scrollable-text">
 		<h2>News</h2>
 	    	<p>2024</p>
           	<p>[Award] Our team has won the Excellent Innovation Award, 2nd Place, in the IEEE International Challenge in Design Methods for Power Electronics. Cheers! Details of the challenge can be found <a href="https://github.com/minjiechen/magnetchallenge">here</a>. In the challenge, we use AI to improve the accuracy of the power loss model for magnetic components. We are in the procedure to publish our results. Stay tuned!</p>
