@@ -103,6 +103,27 @@
 		<p>&bull; Technical Program Chair in IEEE-PEDG 2024, 2023, IEEE-ISIE 2020, IEEE-COMPEL 2020</p>
 		</div>
 
+		<p>Total number of visitors: <span id="visitorCount"></span></p>
+
+    		<script>
+        		// Retrieve the current visitor count from local storage
+        		let visitorCount = localStorage.getItem('visitorCount');
+
+        		// If visitorCount is null, initialize it to 0
+        		if (!visitorCount) {
+            			visitorCount = 0;
+        		}
+
+        		// Increment the visitor count
+        		visitorCount++;
+
+        		// Store the updated visitor count back to local storage
+        		localStorage.setItem('visitorCount', visitorCount);
+
+        		// Display the visitor count on the webpage
+        		document.getElementById('visitorCount').innerText = visitorCount;
+    		</script>
+		
         </div>
     </section>
 
