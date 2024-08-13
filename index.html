@@ -2,35 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=100vw, initial-scale=1.0">
     <title>Dr. ZIAN QIN - Personal Webpage</title>
     <style>
         body {
             font-family: Verdana, sans-serif;
-            margin: 0;
+	    font-size: 0.9vw;
+            margin-left: 15vw;
+	    margin-right: 15vw;
             padding: 0;
             background-color: #f4f4f4;
         }
         header {
             background-color: #333;
             color: #fff;
-            padding: 20px;
+            padding: 1vw;
             text-align: center;
         }
         section {
-            padding: 20px;
-            margin: 10px;
+            padding: 0.5vw;
+            margin-bottom: 0.5vw;
             background-color: #fff;
         }
 
 	.container {
-            display: flex;
-            align-items: flex-start; /* Align items to the start of the container */
+	    width: 50vw;
+	    display: flex;
+            align-items: center; /* Align items to the start of the container */
+	    margin: auto;
         }
         .photos {
             display: flex;
             flex-direction: column; /* Arrange photos in a column */
-            margin-right: 30px; /* Space between photos and text */
+            margin-right: 1.5vw; /* Space between photos and text */
         }
 	.photos.scrollable {
 	    height: 1000px;
@@ -38,8 +42,8 @@
         }
 	.photos figure {
             margin: 0;
-            margin-bottom: 20px;
-	    width: 300px; /* Set the width of the figure */
+            margin-bottom: 1vw;
+	    width: 15vw; /* Set the width of the figure */
 	    text-align: center; /* Center-align the caption text */
         }
         .photos img {
@@ -53,18 +57,24 @@
             margin-top: 5px;
         }   
 	.scrollable-text {
-            width: 1000px; /* Set the desired width */
-            height: 1000px; /* Set the desired height */
+            width: 50vw; /* Set the desired width */
+            height: 50vw; /* Set the desired height */
             overflow-y: auto; /* Enable vertical scrolling */
-            padding: 10px; /* Optional: Add some padding for better readability */
+            padding: 0.5px; /* Optional: Add some padding for better readability */
             background-color: #FFFFFF; /* Optional: Set a background color */
         }
         .non-scrollable-text {
-            width: 1000px; /* Set the same width for consistency */
-            padding: 10px; /* Optional: Add some padding for better readability */
+            width: 50vw; /* Set the same width for consistency */
+            padding: 0.5vw; /* Optional: Add some padding for better readability */
             background-color: #FFFFFF; /* Optional: Set a background color */
         }
-    }
+	.my-button {
+        	font-size: 0.9vw; /* Adjust font size */
+        	padding: 0.2vw 0.5vw; /* Customize padding */
+		border: none;
+		text-decoration: none;
+    	}
+    
 	 
 
 	    
@@ -73,7 +83,7 @@
         }
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 1vw;
             background-color: #333;
             color: #fff;
         }
@@ -87,13 +97,40 @@
     </header>
     <section id="about">
         <div class="container">
+
             
 		<div class="photos">
-			<img src="ReducedSizeforWeb/Picture1.png" alt="" width="200" height="">
-			
+			<img src="ReducedSizeforWeb/Picture1.png" alt="" width="180" height="">
+
 		</div>
-		
+				
+
 		<div class="non-scrollable-text">
+
+		<a href="research.html">
+    			<button class="my-button">Research</button>
+		</a>
+
+		<a href="gallery.html">
+    			<button class="my-button">Gallery</button>
+		</a>
+
+		<a href="https://scholar.google.com/citations?user=ThdaIp8AAAAJ&hl=en">
+    			<button class="my-button">Google Scholar</button>
+		</a>
+		
+		<a href="https://www.linkedin.com/in/zian-qin-%EF%BC%88%E7%A7%A6%E5%AD%90%E5%AE%89%EF%BC%89-6b85b25a/?originalSubdomain=nl">
+    			<button class="my-button">Linkedin</button>
+		</a>
+
+		<a href="https://www.researchgate.net/profile/Zian-Qin">
+    			<button class="my-button">ResearchGate</button>
+		</a>
+
+		<a href="https://www.tudelft.nl/staff/z.qin-2/?cHash=2779a9e9c49eda13e75edd4a3bcd5fab">
+    			<button class="my-button">TU Delft</button>
+		</a>
+
 		<h2>About Me</h2>
 		<p>&bull; Associate Professor at Delft University of Technology</p>
 		<p>&bull; IEEE Senior Member</p>
@@ -103,11 +140,11 @@
 		<p>&bull; 10+ projects sponsored by industrial, Dutch national, and EU funding</p>
 		<p>&bull; Associate editor of top-tier journals, e.g. TIE, JESTPE</p>
 		<p>&bull; Technical Program Chair in IEEE-PEDG 2024, 2023, IEEE-ISIE 2020, IEEE-COMPEL 2020</p>
+
+		
 		</div>
 
-		<p>Total number of visitors: <span id="visitorCount"></span></p>
-
-    		<script>
+	 <script>
         		// Retrieve the current visitor count from local storage
         		let visitorCount = localStorage.getItem('visitorCount');
 
@@ -135,73 +172,20 @@
 		<div class="non-scrollable-text">
 			<h2>Contact</h2>
             		<p>Email:z.qin-2@tudelft.nl, zqi@ieee.org</p>
-			<p><a href="https://www.linkedin.com/in/zian-qin-%EF%BC%88%E7%A7%A6%E5%AD%90%E5%AE%89%EF%BC%89-6b85b25a/?originalSubdomain=nl">LinkedIn profile</a>, <a href="https://www.researchgate.net/profile/Zian-Qin">researchgate</a>, <a href="https://scholar.google.com/citations?user=ThdaIp8AAAAJ&hl=en">GoogleScholar</a></p>
- 		</div>
+		</div>
 	</div>
     </section>
 
     <section id="projects">
         <div class="container">
 
-		<div class="photos scrollable">
-			
-			<figure>
-				<img src="ReducedSizeforWeb/awardCertificate.jpg" alt="">
-			</figure>
-			<figure>
-				<img src="ReducedSizeforWeb/MagnetAward2.JPG" alt="">
-				<figcaption>Prof. Kolar is handing over the award to our team, in APEC, Longbeach. We get the the Excellent Innovation Award, 2nd Place, in the IEEE International Challenge in Design Methods for Power Electronics. Cheers!</figcaption>
-			</figure>
-
-			<figure>
-				<img src="ReducedSizeforWeb/ProgressusFinalReview.png" alt="">
-				<figcaption> The Dutch delegation in the final review of Progressus in Bari, Italy </figcaption>
-			</figure>
-
-			<figure>
-				<img src="ReducedSizeforWeb/ecceAsia2023.png" alt="">
-				<figcaption>Tutoiral in ECCE Asia 2023, Jeju, Korea</figcaption>
-			</figure>
-
-			<figure>
-				<img src="ReducedSizeforWeb/FlexH2_2ndWorkshop.jpg" alt="">
-				<figcaption>FlexH2 consoritum in ESP</figcaption>
-			</figure>
-
-			<figure>
-				<img src="ReducedSizeforWeb/Progressus.jpg" alt="">
-				<figcaption>Progressus meeting in Infineon, Munich</figcaption>
-			</figure>
-
-			<figure>
-				<img src="ReducedSizeforWeb/PEMCkeynote.jpg" alt="">
-				<figcaption>Keynote in PEMC 2022, Brasov</figcaption>
-			</figure>
-
-			<figure>
-				<img src="ReducedSizeforWeb/MGtest.png" alt="">
-				<figcaption>MG EV test in ESP</figcaption>
-			</figure>
-
-			<figure>
-				<img src="ReducedSizeforWeb/offshorePlat.jpg" alt="">
-				<figcaption>Offshore platform in a shipyard, Rotterdam</figcaption>
-			</figure>
-
-			<figure>
-				<img src="ReducedSizeforWeb/HPchargerTest.jpg" alt="">
-				<figcaption>High power charger test in Autel</figcaption>
-			</figure>
-			
-			
-		</div>
-		
-            	<div class="scrollable-text">
+		<div class="non-scrollable-text">
 		<h2>News</h2>
 	    	<p>2024</p>
-		<p style="color: blue;">[Service] IEEE Benelux Section Transportation Electrification Council Chapter has been formed since 28 July 2024, and Dr. Qin is the founding chair.</p>
-		<p>[Award] Our team has won the Excellent Innovation Award, 2nd Place, in the IEEE International Challenge in Design Methods for Power Electronics. Cheers! Details of the challenge can be found <a href="https://github.com/minjiechen/magnetchallenge">here</a>. In the challenge, we use AI to improve the accuracy of the power loss model for magnetic components. We are in the procedure to publish our results. Stay tuned!</p>
+		<p><b>[Service] IEEE Benelux Section Transportation Electrification Council Chapter has been formed since 28 July 2024, and Dr. Qin is the founding chair</b></p>
+		<p><b>[Award] Our team has won the Excellent Innovation Award, 2nd Place, in the IEEE International Challenge in Design Methods for Power Electronics. Cheers! Details of the challenge can be found <a href="https://github.com/minjiechen/magnetchallenge">here</a>. In the challenge, we use AI to improve the accuracy of the power loss model for magnetic components. We are in the procedure to publish our results. Stay tuned!</b></p>
             	<p>[Service] Dr. Qin is invited to serve as a guest AE for the JESTPE special issue on Design and Validation Methodologies for Power Electronics Components and Systems</p>
+		<p><b>[Service] Dr. Qin is appointed as an associate editor of IEEE JESTPE </b></p>
 		<p>[Grant] The EU Horizon project ECS4DRES is granted. I will hire a PhD or PostDoc to study grid-forming energy storage systems. Send me your CV and a motivation letter if you are interested in the position</p>
 		<p>[Service] Dr. Qin is invited to serve as a guest AE for the JESTPE special issue on Power Electronics Role in Future Renewables and Power-to-X Systems. You are welcome to submit your work. Check out the <a href="https://www.ieee-pels.org/images/files/JESTPE_Special_Issue_P-to-X_-_final.pdf">CFP</a></p>
 		<p><b>[Promotion] Dr. Qin is promoted to an associate professor at TU Delft, starting from 1st Feb, 2024</b></p>
@@ -260,4 +244,6 @@
     </footer>
 </body>
 </html>
+
+
 
