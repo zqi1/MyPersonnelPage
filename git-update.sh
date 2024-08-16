@@ -12,7 +12,6 @@ fi
 
 # Add all changes to the staging area
 git add .
-git add ReducedSizeforWeb/
 
 # Commit the changes with the provided message
 git commit -m "$1"
