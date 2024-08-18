@@ -1,1 +1,153 @@
-under construction
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100vw, initial-scale=1.0">
+    <title>Dr. ZIAN QIN - Personal Webpage</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+	    font-size: 0.9vw;
+            margin-left: 15vw;
+	    margin-right: 15vw;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1vw;
+            text-align: center;
+        }
+        section {
+            padding: 0.5vw;
+            margin-bottom: 0.5vw;
+            background-color: #fff;
+        }
+
+	.container {
+	    width: 50vw;
+	    display: flex;
+            align-items: center; /* Align items to the start of the container */
+	    margin: auto;
+        }
+        .photos {
+            display: flex;
+            flex-direction: column; /* Arrange photos in a column */
+            margin-right: 1.5vw; /* Space between photos and text */
+        }
+	.photos.scrollable {
+	    height: 1000px;
+	    overflow-y: auto; /* Enable vertical scrolling */
+        }
+	.photos figure {
+            margin: 0;
+            margin-bottom: 1vw;
+	    text-align: center; /* Center-align the caption text */
+        }
+        .photos img {
+            margin-bottom: 0.5vw; /* Space between images */
+        }
+	.photos figcaption {
+            width: 100%; /* Ensure caption takes the full width of the figure */
+            font-style: italic;
+            margin-top: 0.5vw;
+        }   
+	.scrollable-text {
+            width: 50vw; /* Set the desired width */
+            height: 50vw; /* Set the desired height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            padding: 0.5px; /* Optional: Add some padding for better readability */
+            background-color: #FFFFFF; /* Optional: Set a background color */
+        }
+        .non-scrollable-text {
+            width: 50vw; /* Set the same width for consistency */
+            padding: 0.5vw; /* Optional: Add some padding for better readability */
+            background-color: #FFFFFF; /* Optional: Set a background color */
+        }
+	.my-button {
+        	font-size: 0.9vw; /* Adjust font size */
+        	padding: 0.2vw 0.5vw; /* Customize padding */
+		border: none;
+		text-decoration: none;
+		color: #fff;
+		background-color: #333;
+		display: inline-block;
+		margin: 0.2vw;
+    	}
+	.my-button:hover {
+            background-color: #e0e0e0; /* Change color on hover to make it interactive */
+        }
+        /* Remove underline and padding/margin from links */
+        a.my-button {
+            text-decoration: none; /* Ensure no underline if buttons are links */
+            margin: 0.2vw;
+            padding: 0;
+        }
+    
+	 
+
+	    
+        h1, h2 {
+            color: #0000B;
+        }
+        footer {
+            text-align: center;
+            padding: 1vw;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dr. Zian Qin</h1>
+        </div>
+
+	<a href="index.html" class="my-button">Homepage</a>
+    </header>
+    
+    <section id="Invited Talk">
+        <div class="container">
+
+		<div class="non-scrollable-text">
+			<h2>Presentations</h2>
+			<p>&bull; <a href="https://www.youtube.com/watch?v=U0yOCbzCj5o">Power quality in electric vehicle charging networks</a>, Invited Talk in Technical Webinar of Benelux IEEE PELS/IAS/PES Joint Chapter, Sep 14, 2023</p>
+			<p>&bull; <a href="https://www.youtube.com/watch?v=o-7UPXzYd1g">Power quality of EV charging station – a power electronics perspective</a>, Invited Talk in ELaadNL Global EV Charging Test Webinar, Jul 8, 2021</p>
+			<p>&bull; <a href="https://ieee-pemc2022.org/prof-zian-qin/">The power quality of EV charging</a>, Plenary Speech in IEEE-PEMC 2022</p>
+			<p>&bull; Invited talk on Power quality of EV charging in DERLab Knowledge Day 2022, Huawei Didtal Power Webinar 2022</p>
+			<p>&bull; <a href="researchOnBidirectional DC power conversion_V3.pdf">Recent research on DC power conversion,</a> 2022</p>
+			
+			<h2>Research Projects</h2>
+			<p> &bull; Scalable grid forming energy storage with intelligent control systems, Grow - A Marie Sklodowska-Curie COFUND Programme, 2024-2028</p>
+		        <p> &bull; Grid forming energy storage, EU Horizon ECS4DRES, 2024-2027</p>
+			<p> &bull; Power quality of energy hubs for charging heavy-duty trucks, sponsored by Shell, 2023-2027 </p>
+			<p> &bull; Flexible Offshore Wind Hydrogen Power Plant Module - FlexH2, VO Mooi, 2022-2026</p>
+			<p> &bull; Intelligent Battery Management Systems, 2022-2026 </p>
+			<p> &bull; Cyber security of power electronics dominated system, 2021-2025 </p>
+			<p> &bull; Medium voltage grid integration of fast EV charging, 2021-2025 </p>
+			<p> &bull; Bipolar DC grid on ships, NWO NEON project, 2020-2024</p>
+			<p> &bull; Gird impact of fast EV charging station, EU Horizon 2020 PROGRESSUS, 2020-2023 </P>
+			<p> &bull; Front-end converter of EV charger, EU Horizon 2020 Power2Power, 2019-2022 </p>
+			<p> &bull; Large offshore Wind Harmonics Mitigation - LowHarm, TKI Wind Op Zee, 2017-2019</p>
+			<p> &bull; Distribution technologies for smart buildings, NWO, 2016-2020, <a href="https://research.tudelft.nl/en/publications/future-dc-smart-homes-key-power-electronics-development">PhD thesis</a></p>
+                        <p> &bull; Building blocks for meshed LVDC systems, Eranet DCSMART EU project, 2016-2020, <a href="https://research.tudelft.nl/en/publications/building-blocks-for-meshed-lvdc-systems">PhD thesis</a></p>
+			<p> &bull; Solar home systems for improving electricity access, Delft Global Initiative, 2015-1019, <a href="https://repository.tudelft.nl/record/uuid:aa29b04f-4cd7-41fa-b48b-5edc75fef104">PhD thesis</a></p>
+		
+		</div>
+
+	</div>
+    </section>
+
+
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Zian Qin. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
