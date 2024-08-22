@@ -30,35 +30,28 @@
 	    display: flex;
             align-items: center; /* Align items to the start of the container */
 	    margin: auto;
+	    overflow: hidden;
         }
-        .photos {
-            display: flex;
-            flex-direction: column; /* Arrange photos in a column */
-            margin-right: 1.5vw; /* Space between photos and text */
+        .image-row {
+	    display: flex;
+            justify-content: space-between;
+	    gap: 5px; /* Space between image-caption pairs */
+	    font-size:0;
         }
-	.photos.scrollable {
-	    height: 1000px;
-	    overflow-y: auto; /* Enable vertical scrolling */
+        .image-item {
+            text-align: center; /* Center the caption under the image */
         }
-	.photos figure {
-            margin: 0;
-            margin-bottom: 1vw;
-	    text-align: center; /* Center-align the caption text */
+        .image-item img {
+	    max-width: 100%;
+	    display: inline-block;
+	    width: 6vw;
+	    gap: 1px;
+	    object-fit: contain;
         }
-        .photos img {
-            margin-bottom: 0.5vw; /* Space between images */
-        }
-	.photos figcaption {
-            width: 100%; /* Ensure caption takes the full width of the figure */
-            font-style: italic;
-            margin-top: 0.5vw;
-        }   
-	.scrollable-text {
-            width: 50vw; /* Set the desired width */
-            height: 50vw; /* Set the desired height */
-            overflow-y: auto; /* Enable vertical scrolling */
-            padding: 0.5px; /* Optional: Add some padding for better readability */
-            background-color: #FFFFFF; /* Optional: Set a background color */
+        .image-item figcaption {
+            margin-top: 0.1vw; /* Space between image and caption */
+            color: #555;
+	    gap: 0.1vw;
         }
         .non-scrollable-text {
             width: 50vw; /* Set the same width for consistency */
@@ -139,6 +132,66 @@
 
 	</div>
     </section>
+	
+	<section id="Partners">
+		
+
+
+		<div class="container">
+			<h2>Industrial Partners</h2>
+		</div>
+		<div class="container">
+			<div class="image-row">
+
+				<figure class="image-item">
+					<img src="ReducedSizeforWeb/Shell.png" alt= >
+					</figure>
+			
+				<figure class="image-item">
+					<img src="ReducedSizeforWeb/Equinor.png" alt= >
+				</figure>
+					
+				<figure class="image-item">
+					<img src="ReducedSizeforWeb/Alfen.webp" alt=>
+				</figure>
+
+				<figure class="image-item">
+					<img src="ReducedSizeforWeb/Sungrow.jpg" alt=>
+				</figure>
+
+				<figure class="image-item">
+					<img src="ReducedSizeforWeb/Elaad.jpg" alt= >
+				</figure>
+							
+			</div>
+		</div>	
+		
+		<div class="container">
+			<div class="image-row">
+
+				<figure class="image-item">
+					<img src="ReducedSizeforWeb/Tennet.jpg" alt= >
+					</figure>
+			
+				<figure class="image-item">
+					<img src="ReducedSizeforWeb/Damen.png" alt= >
+				</figure>
+					
+				<figure class="image-item">
+					<img src="ReducedSizeforWeb/ABB.png" alt=>
+				</figure>
+
+				<figure class="image-item">
+					<img src="ReducedSizeforWeb/GE.png" alt=>
+				</figure>
+
+				<figure class="image-item">
+					<img src="ReducedSizeforWeb/Vonk.jfif" alt= >
+				</figure>
+							
+			</div>		
+		</div>
+	</div>
 
 
 
